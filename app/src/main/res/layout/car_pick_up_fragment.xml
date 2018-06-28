@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="mawaqaa.parco.Fragment.CarPickUpFragment">
+    <!--fonts-->
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/which_car_pickup"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/car_recy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+            <Button
+                android:id="@+id/add_car_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="#fff"
+                android:text="@string/add_new_one"
+                android:textAllCaps="false"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/black">
+
+            </View>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

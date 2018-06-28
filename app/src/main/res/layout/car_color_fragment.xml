@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="mawaqaa.parco.Fragment.CarColorFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--check color textsize-->
+        <TextView
+            android:textSize="17.5sp"
+            android:id="@+id/textColor"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/color"
+            android:textStyle="bold" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/car_color_rec"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</FrameLayout>

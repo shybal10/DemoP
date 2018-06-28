@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:orientation="vertical"
+    android:gravity="center">
+<!--font-->
+    <TextView
+        android:textColor="@color/black"
+        android:background="@drawable/gray_circle_2x"
+        android:id="@+id/fuel_name"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="TextView"
+        android:textSize="13.75sp" />
+
+</RelativeLayout>

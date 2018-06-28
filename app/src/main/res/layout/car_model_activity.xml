@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="mawaqaa.parco.Activity.CarModelActivity">
+
+    <!--sent the fonts heading is bold-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/carModelText"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/car_model"
+            android:textColor="@color/black"
+            android:textSize="17.75sp" />
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/gray"
+            android:hint="@string/type_to_search"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textSize="15sp" />
+
+        <!--font normal-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/car_model_rec"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

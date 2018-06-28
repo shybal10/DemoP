@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blue"
+    android:orientation="vertical">
+    <!--change the font bold-->
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/menu_ic" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:src="@drawable/logo" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@drawable/line_white" />
+
+    <TextView
+        android:id="@+id/languge_txt"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/language"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@drawable/line_white" />
+
+    <TextView
+        android:id="@+id/noti_txt"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/notification"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@drawable/line_white" />
+
+    <TextView
+        android:id="@+id/account_txt"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/account"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@drawable/line_white" />
+
+    <TextView
+        android:id="@+id/packages_txt"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Packages"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@drawable/line_white" />
+
+    <TextView
+        android:id="@+id/about_txt"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/about"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@drawable/line_white" />
+
+    <TextView
+        android:id="@+id/logout"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/logout"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/line_white"
+
+        />
+
+</LinearLayout>

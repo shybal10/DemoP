@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="15sp"
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/curent_credit" />
+
+        <TextView
+            android:textSize="15sp"
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:text="KD 15"
+            android:textColor="@android:color/holo_blue_dark" />
+    </LinearLayout>
+
+    <TextView
+        android:textSize="15sp"
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/credit_text" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/gray_sep_2x"
+        android:layout_marginTop="20dp"/>
+
+    <GridView
+        android:id="@+id/gridview_prepaidCards"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:layout_marginTop="20dp"
+
+
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:textSize="15sp"
+            android:id="@+id/bunChangePasss"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@android:color/holo_blue_light"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/purchase_credit"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

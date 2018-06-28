@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:layout_marginTop="10dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <!--set font normal-->
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:padding="15dp"
+        app:srcCompat="@drawable/logo_2x" />
+
+    <TextView
+        android:id="@+id/about_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/Contact_us_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Contact Us"
+        android:textColor="#7d7d7d"
+        android:textSize="15.75sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/mailicon3x" />
+
+        <TextView
+            android:id="@+id/email_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="13.5sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/phoneicon3x" />
+
+        <TextView
+            android:id="@+id/phone_txt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="13.5sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textSize="15sp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/webicon3x" />
+
+        <TextView
+            android:id="@+id/website_txt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text="Website"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="13.5sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/playicon" />
+
+        <TextView
+            android:id="@+id/tutorial_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text="Tutorial"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="13.5sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="mawaqaa.parco.Activity.PrepaidCreditActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textSize="18sp"
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/prepaid_credit"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bunChangePasss"
+            android:layout_below="@+id/title"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textSize="15sp"
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/curent_credit" />
+
+                <TextView
+                    android:textSize="15sp"
+                    android:id="@+id/total_credit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:textSize="15sp"
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/credit_text" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/gray_sep_2x" />
+
+            <!--<GridView-->
+            <!--android:id="@+id/gridview_prepaidCards"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="200dp" />-->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/prepaid_rec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+        <Button
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:id="@+id/purchase"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp"
+            android:background="@android:color/holo_blue_light"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/purchase_credit"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

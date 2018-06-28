@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="mawaqaa.parco.Activity.MyCArActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:text="@string/my_cars"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/car_recy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/add_car_layout"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp">
+    </android.support.v7.widget.RecyclerView>
+
+
+    <LinearLayout
+        android:id="@+id/no_car_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/no_car" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/you_havnt_car"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/plz_add_car" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/add_car_layout"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="17sp"
+            android:textAllCaps="false"
+            android:id="@+id/add_car_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_blue"
+            android:text="@string/add_new_car"
+            android:textColor="@color/white" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black">
+        </View>
+    </LinearLayout>
+
+</RelativeLayout>

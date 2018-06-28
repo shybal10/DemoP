@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:scaleType="fitCenter"
+        android:layout_height="75dp"
+        android:src="@drawable/broken"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="@string/sry_no_driver"
+        android:layout_margin="10dp"
+        android:id="@+id/user_name"/>
+
+    <TextView
+        android:id="@+id/please_select"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="@string/plz_slct_later_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <Button
+        android:textSize="17sp"
+        android:textAllCaps="false"
+        android:id="@+id/ok_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="15dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:textColor="@color/blue"
+        android:text="@string/ok" />
+</LinearLayout>

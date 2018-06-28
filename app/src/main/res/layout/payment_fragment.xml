@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="mawaqaa.parco.Fragment.PaymentFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+
+    <TextView
+        android:textColor="#7d7d7d"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/info_about_balance" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="8"
+        android:background="@color/gray"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="15sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="4"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/prepaid_credit_ic"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="@string/prepaid_credit"
+            android:textStyle="bold" />
+
+        <TextView
+            android:textSize="15sp"
+            android:textColor="#7d7d7d"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="3"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="10.000" />
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+
+    <TextView
+        android:textSize="15sp"
+        android:id="@+id/knet"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/knet"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:drawableLeft="@drawable/knet_ic"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+
+    <TextView
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/credit_card"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:drawableLeft="@drawable/credit_card_ic"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/black_line"
+        android:scaleType="fitXY"/>
+</LinearLayout>

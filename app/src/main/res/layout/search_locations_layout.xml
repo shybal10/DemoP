@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:paddingTop="15dp"
+    android:background="@drawable/search_dialog_bg"
+    android:layout_marginTop="24dp"
+    android:orientation="vertical"
+    android:layout_gravity="top|center_horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_marginLeft="24dp"
+    android:layout_marginRight="24dp"
+    android:layout_height="wrap_content">
+    <!--add locations history and set font-->
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:textColor="#7d7d7d"
+            android:id="@+id/open_location_auto_complete_btn"
+            android:textSize="15sp"
+            android:background="@android:color/transparent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:hint="Type to search"/>
+        <View
+            android:background="#7d7d7d"
+            android:layout_width="1dp"
+            android:layout_height="match_parent">
+
+        </View>
+
+        <ImageButton
+            android:scaleType="fitXY"
+            android:id="@+id/my_location_button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/feld"
+            android:padding="5dp"
+            android:src="@drawable/location_btn" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#7d7d7d"/>
+    <TextView
+        android:paddingTop="17dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Previous Locations"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+    <View
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#7d7d7d"/>
+    <TextView
+        android:padding="10dp"
+        android:text="mexico"
+        android:id="@+id/location1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+    <TextView
+        android:padding="10dp"
+        android:text="kuwait"
+        android:id="@+id/location2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+    <TextView
+        android:padding="10dp"
+        android:text="dubai"
+        android:id="@+id/location3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />>
+
+    <Button
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:text="Cancel"
+        android:textColor="@color/blue" />
+
+</LinearLayout>

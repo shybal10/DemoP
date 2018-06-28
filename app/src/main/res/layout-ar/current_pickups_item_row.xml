@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layoutDirection="rtl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/border_bg"
+        android:orientation="horizontal"
+        android:weightSum="11">
+
+        <TextView
+            android:textDirection="rtl"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:id="@+id/current_TV_city"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:textDirection="rtl"
+            android:id="@+id/current_TV__status"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/current_ImV__arrow"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_left_arrow" />
+
+    </LinearLayout>
+</LinearLayout>

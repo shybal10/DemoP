@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="mawaqaa.parco.Activity.PackageDetailsActivity">
+
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/packege_details"
+        android:textStyle="bold" />
+
+    <TextView
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:text="Early Bird"
+        android:textColor="@color/blue" />
+
+    <TextView
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Text Text Text Text Text Text Text Text Text \nTextTextTextText \nTextTextText" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/fual" />
+
+            <TextView
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/gray_circle_2x"
+                android:gravity="center"
+                android:text="5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/pickups" />
+
+            <TextView
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/gray_circle_2x"
+                android:gravity="center"
+                android:text="4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/wash" />
+
+            <TextView
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/gray_circle_2x"
+                android:gravity="center"
+                android:text="3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/other" />
+
+            <TextView
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/gray_circle_2x"
+                android:gravity="center"
+                android:text="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

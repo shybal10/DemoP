@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "507200227598",
+    "firebase_url": "https://parco-3b8f7.firebaseio.com",
+    "project_id": "parco-3b8f7",
+    "storage_bucket": "parco-3b8f7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507200227598:android:0050a28d1db8649f",
+        "android_client_info": {
+          "package_name": "mawaqaa.parco"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "507200227598-o43g8t53nk8fb2jq72h4sv7j8m1uik3p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mawaqaa.parco",
+            "certificate_hash": "91968ec3035c81a6bd0985f392ed18faf980649c"
+          }
+        },
+        {
+          "client_id": "507200227598-agqhpv46ela6lj24mqp4jgddrjkv5rnl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmA8FaZ06PKA8dkfcgI3hoRQ7UV7ZYRCg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "507200227598-agqhpv46ela6lj24mqp4jgddrjkv5rnl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

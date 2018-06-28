@@ -1,0 +1,49 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="mawaqaa.parco.Fragment.CarModelFragment">
+
+    <LinearLayout
+        android:id="@+id/car_model_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--set the fonts-->
+
+        <TextView
+            android:id="@+id/car_model_txt"
+            android:textSize="17.75sp"
+            android:textColor="@color/black"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/car_model" />
+
+        <EditText
+            android:textSize="15sp"
+            android:id="@+id/search"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/type_to_search"
+            android:background="@color/gray"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/car_model_rec"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="mawaqaa.parco.Activity.SplashActivity">
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@color/blue" />-->
+
+    <!--<View-->
+    <!--android:background="@color/white"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1" />-->
+    <!--</LinearLayout>-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/dot_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/skip"
+        android:gravity="center"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+    <TextView
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="bold"
+        android:id="@+id/skip"
+        android:textSize="15sp"
+        android:textAllCaps="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="45dp"
+        android:layout_marginLeft="30dp"
+        android:gravity="right"
+        android:padding="10dp"
+        android:text="@string/skip" />
+
+</RelativeLayout>

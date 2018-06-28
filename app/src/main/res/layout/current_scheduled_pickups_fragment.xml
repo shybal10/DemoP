@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:fillViewport="true"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:id="@+id/current_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/current_pickup"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/currentPickups_recylerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:id="@+id/schedule_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/scheduled_pickup" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/scheduledPickups_recylerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/no_pickup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/broken" />
+
+        <TextView
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/you_dont_have_pickup" />
+    </LinearLayout>
+</LinearLayout>

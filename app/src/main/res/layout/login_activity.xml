@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+
+    tools:context="mawaqaa.parco.Activity.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/parco_logo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:focusable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/parco_txt"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/parco_logo"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/logoname" />
+
+        <!--        <TextView
+                    android:id="@+id/parco_txt"
+                    style="@style/Base.TextAppearance.AppCompat.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/parco_logo"
+                    android:gravity="center"
+                    android:text="@string/parco"
+                    android:textStyle="bold" />-->
+
+        <LinearLayout
+            android:id="@+id/first_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/parco_txt"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line_white" />
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="0px"
+                android:focusable="true"
+                android:focusableInTouchMode="true" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:hint="@string/hint_email"
+                android:textColorHint="@color/white"
+
+                >
+
+                <EditText
+                    android:id="@+id/input_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="15sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/line_white" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:hint="@string/hint_password"
+                android:textColorHint="@color/white">
+
+                <EditText
+                    android:id="@+id/input_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:inputType="textPassword"
+
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+
+                    android:textSize="15sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/line_white" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/first_linear"
+            android:layout_marginTop="25dp">
+
+            <!--<CheckBox-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="@string/remember_me"-->
+            <!--android:textColor="@color/white" />-->
+
+            <TextView
+                android:id="@+id/forgetpass_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:gravity="center"
+                android:text="@string/forgot_password"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/relative"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>
